@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Line Card | RBT Distribution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .text-brand-red { color: #e1251b; }
+        .bg-brand-red { background-color: #e1251b; }
+        .hover-bg-brand-red:hover { background-color: #c81d14; }
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 flex flex-col min-h-screen">
+
+    <div class="bg-gray-900 text-gray-300 text-xs py-2 px-4 md:px-8 flex flex-col sm:flex-row justify-between items-center">
+        <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+            <span><i class="fa-solid fa-phone mr-1"></i> 1-(855) 335-7700</span>
+            <span><i class="fa-solid fa-envelope mr-1"></i> sales@rbtdistribution.com</span>
+        </div>
+        <div class="bg-yellow-400 text-gray-900 font-bold px-3 py-1 rounded-sm text-center">
+            Powering Dealers Across Automotive, Marine & Outdoor Markets
+        </div>
+        <div class="flex items-center space-x-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white transition">Need Help? <i class="fa-solid fa-chevron-down ml-1"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fa-solid fa-user mr-1"></i> Welcome, Dealer Access <i class="fa-solid fa-chevron-down ml-1"></i></a>
+        </div>
+    </div>
+
+    <header class="bg-white md:flex md:justify-between md:items-center md:sticky md:top-0 md:z-50 md:shadow-sm md:py-5 md:px-8">
+        <!-- Logo for mobile view - this part will scroll -->
+        <div class="p-4 flex justify-center md:hidden">
+            <a href="index.html" class="flex items-center flex-col hover:opacity-80 transition">
+                <img src="RBT T Red.png" alt="RBT Distribution Logo" class="h-16 mb-1 object-contain">
+                <span class="text-[10px] text-gray-500 tracking-wider font-bold">RELY ON INNOVATIVE SOLUTIONS</span>
+            </a>
+        </div>
+
+        <!-- This container is sticky on mobile, and part of the flex layout on desktop -->
+        <div class="sticky top-0 z-40 bg-white shadow-md md:shadow-none py-4 px-4 md:p-0 flex items-center w-full md:flex-1">
+            <!-- Logo for desktop view -->
+            <div class="hidden md:flex items-center w-auto md:flex-1">
+                <a href="index.html" class="flex items-center flex-col hover:opacity-80 transition">
+                    <img src="RBT T Red.png" alt="RBT Distribution Logo" class="h-16 mb-1 object-contain">
+                    <span class="text-[10px] text-gray-500 tracking-wider font-bold">RELY ON INNOVATIVE SOLUTIONS</span>
+                </a>
+            </div>
+
+            <div class="flex-grow md:flex-grow-0 max-w-2xl w-full md:mx-4 lg:mx-12">
+                <div class="flex w-full border-2 border-gray-200 rounded-md overflow-hidden focus-within:border-brand-red transition bg-white">
+                    <select class="bg-gray-100 px-3 text-gray-700 font-medium border-r border-gray-200 hover:bg-gray-200 transition text-sm outline-none cursor-pointer appearance-none text-center">
+                        <option value="all">All Categories</option>
+                        <option disabled>──────────</option>
+                        <option value="sku">SKU / Part #</option>
+                        <option value="brand">Brand Name</option>
+                        <option disabled>──────────</option>
+                        <option value="auto">Automotive</option>
+                        <option value="powersports">Powersports</option>
+                        <option value="marine">Marine</option>
+                        <option value="security">Security</option>
+                    </select>
+                    
+                    <input type="text" placeholder="What are you looking for?" class="w-full px-4 py-3 outline-none text-sm">
+                    
+                    <button class="bg-brand-red text-white px-6 hover-bg-brand-red transition">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </div>
+                <div class="text-xs text-brand-red mt-1 font-semibold cursor-pointer hover:underline flex space-x-4">
+                    <a href="products.html">View All Product Lists</a>
+                    <a href="brands.html">View All Brands</a>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-6 pl-4 md:pl-0 md:flex-1 md:justify-end">
+                <a href="cart.html" class="relative flex flex-col items-center text-gray-700 hover:text-brand-red transition">
+                    <i class="fa-solid fa-cart-shopping text-2xl mb-1"></i>
+                    <span class="text-xs font-bold">CART</span>
+                    <span class="absolute -top-2 -right-3 bg-brand-red text-white text-[10px] font-bold h-5 w-5 rounded-full flex items-center justify-center border-2 border-white">2</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-brand-red text-white shadow-md">
+        <ul class="flex flex-wrap justify-center space-x-1 md:space-x-8 text-sm font-semibold py-3 px-4">
+            <li><a href="index.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-house mr-2"></i>Home</a></li>
+            <li><a href="products.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-car mr-2"></i>Automotive</a></li>
+            <li><a href="motorcycle-atv.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-motorcycle mr-2"></i>Motorcycle & ATV</a></li>
+            <li><a href="marine.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-anchor mr-2"></i>Marine</a></li>
+            <li><a href="locks-security.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-lock mr-2"></i>Locks & Security</a></li>
+            <li><a href="Promotions.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-tag mr-2"></i>Promotions</a></li>
+            <li><a href="Linecard.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center border-b-2 border-white"><i class="fa-solid fa-file-lines mr-2"></i>Line Card</a></li>
+        </ul>
+    </nav>
+
+    <div class="bg-white border-b border-gray-200 py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-4xl font-black uppercase tracking-wider text-gray-900 mb-2">Interactive Line Card</h1>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-6">Browse our expansive portfolio of leading manufacturers categorized by market vertical.</p>
+            
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="#automotive" class="bg-gray-100 text-gray-700 hover:bg-brand-red hover:text-white font-bold text-sm py-2 px-4 rounded-full transition"><i class="fa-solid fa-car mr-2"></i>Automotive</a>
+                <a href="#powersports" class="bg-gray-100 text-gray-700 hover:bg-brand-red hover:text-white font-bold text-sm py-2 px-4 rounded-full transition"><i class="fa-solid fa-motorcycle mr-2"></i>Powersports & ATV</a>
+                <a href="#marine" class="bg-gray-100 text-gray-700 hover:bg-brand-red hover:text-white font-bold text-sm py-2 px-4 rounded-full transition"><i class="fa-solid fa-anchor mr-2"></i>Marine</a>
+                <a href="#security" class="bg-gray-100 text-gray-700 hover:bg-brand-red hover:text-white font-bold text-sm py-2 px-4 rounded-full transition"><i class="fa-solid fa-lock mr-2"></i>Tools & Security</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex-grow py-12">
+        <div class="max-w-7xl mx-auto px-4 space-y-16">
+            
+            <section id="automotive" class="scroll-mt-28">
+                <div class="flex items-center mb-6">
+                    <h2 class="text-2xl font-black text-gray-900 uppercase tracking-widest"><i class="fa-solid fa-car text-brand-red mr-3"></i>Automotive</h2>
+                    <div class="ml-4 flex-grow h-px bg-gray-200"></div>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-6">
+                    <a href="products.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="RedA.png" alt="Redarc" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Redarc</span>
+                    </a>
+                    <a href="brand-detail.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="corsa.webp" alt="Corsa" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Corsa Performance</span>
+                    </a>
+                    <a href="products.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="gen.webp" alt="Gen-Y Hitches" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Gen-Y Hitches</span>
+                    </a>
+                    <a href="products.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Edelbrock" alt="Edelbrock" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Edelbrock</span>
+                    </a>
+                    <a href="products.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Eibach" alt="Eibach" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Eibach</span>
+                    </a>
+                    <a href="products.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Rhino+USA" alt="Rhino USA" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Rhino USA</span>
+                    </a>
+                    <a href="products.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=MagnaFlow" alt="MagnaFlow" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">MagnaFlow</span>
+                    </a>
+                     <a href="products.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Auto+Brand+1" alt="Auto Brand 1" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Auto Brand 1</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="powersports" class="scroll-mt-28 mb-6">
+                <div class="flex items-center mb-6">
+                    <h2 class="text-2xl font-black text-gray-900 uppercase tracking-widest"><i class="fa-solid fa-motorcycle text-brand-red mr-3"></i>Powersports & ATV</h2>
+                    <div class="ml-4 flex-grow h-px bg-gray-200"></div>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <a href="motorcycle-atv.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Power+Brand+1" alt="Powersports Brand 1" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Powersports Brand 1</span>
+                    </a>
+                    <a href="motorcycle-atv.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Power+Brand+2" alt="Powersports Brand 2" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Powersports Brand 2</span>
+                    </a>
+                    <a href="motorcycle-atv.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Power+Brand+3" alt="Powersports Brand 3" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Powersports Brand 3</span>
+                    </a>
+                    <a href="motorcycle-atv.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Power+Brand+4" alt="Powersports Brand 4" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Powersports Brand 4</span>
+                    </a>
+                    <a href="motorcycle-atv.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Power+Brand+5" alt="Powersports Brand 5" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Powersports Brand 5</span>
+                    </a>
+                    <a href="motorcycle-atv.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Power+Brand+6" alt="Powersports Brand 6" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Powersports Brand 6</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="marine" class="scroll-mt-28 mb-6">
+                <div class="flex items-center mb-6">
+                    <h2 class="text-2xl font-black text-gray-900 uppercase tracking-widest"><i class="fa-solid fa-anchor text-brand-red mr-3"></i>Marine & Outdoor</h2>
+                    <div class="ml-4 flex-grow h-px bg-gray-200"></div>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <a href="marine.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Marine+Brand+1" alt="Marine Brand 1" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Marine Brand 1</span>
+                    </a>
+                    <a href="marine.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Marine+Brand+2" alt="Marine Brand 2" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Marine Brand 2</span>
+                    </a>
+                    <a href="marine.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Marine+Brand+3" alt="Marine Brand 3" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Marine Brand 3</span>
+                    </a>
+                    <a href="marine.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Marine+Brand+4" alt="Marine Brand 4" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Marine Brand 4</span>
+                    </a>
+                     <a href="marine.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Marine+Brand+5" alt="Marine Brand 5" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Marine Brand 5</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="security" class="scroll-mt-28 mb-6">
+                <div class="flex items-center mb-6">
+                    <h2 class="text-2xl font-black text-gray-900 uppercase tracking-widest"><i class="fa-solid fa-lock text-brand-red mr-3"></i>Tools & Security</h2>
+                    <div class="ml-4 flex-grow h-px bg-gray-200"></div>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <a href="locks-security.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="kryptonite.webp" alt="Kryptonite" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Kryptonite</span>
+                    </a>
+                    <a href="locks-security.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=HIPLOK" alt="HIPLOK" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">HIPLOK</span>
+                    </a>
+                    <a href="products.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=GearWrench" alt="GearWrench" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">GearWrench</span>
+                    </a>
+                    <a href="locks-security.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Security+Brand+1" alt="Security Brand 1" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Security Brand 1</span>
+                    </a>
+                    <a href="products.html" class="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center hover:border-brand-red hover:shadow-lg transition group h-40">
+                        <img src="https://via.placeholder.com/150x80/ffffff/1a1a1a?text=Tool+Brand+1" alt="Tool Brand 1" class="max-h-16 max-w-full object-contain mb-3 group-hover:scale-105 transition duration-300 filter grayscale group-hover:grayscale-0">
+                        <span class="text-sm font-bold text-gray-800 text-center group-hover:text-brand-red">Tool Brand 1</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#1a1a1a] text-gray-400 pt-12 pb-6 border-t-4 border-brand-red mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="border border-gray-700 bg-gray-800 rounded p-4 flex flex-col items-center text-center">
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">Sales Representative</h4>
+                <div class="w-24 h-24 rounded-full bg-gray-600 mb-3 overflow-hidden border-2 border-brand-red">
+                    <img src="https://via.placeholder.com/100" alt="Joshua Alegranti" class="w-full h-full object-cover">
+                </div>
+                <h5 class="text-white font-bold text-lg">Joshua Alegranti</h5>
+                <p class="text-xs text-brand-red mb-2">Outside Sales</p>
+                <a href="mailto:josh@rbtdistribution.com" class="text-xs hover:text-white transition block mb-1">josh@rbtdistribution.com</a>
+                <a href="tel:2144005707" class="text-xs hover:text-white transition block">214-400-5707</a>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">RBT Distribution</h4>
+                <p class="text-xs leading-relaxed">
+                    RBT Distribution is a one-stop shop for aftermarket automotive parts and accessories, and industrial markets. We are a two-step distributor of parts and accessories serving vehicles of markets (automotive, powersports, marine, RV, sport and outdoor etc).
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">Useful Links</h4>
+                <ul class="text-xs space-y-2">
+                    <li><a href="#" class="hover:text-brand-red transition">Company Info</a></li>
+                    <li><a href="Linecard.html" class="hover:text-brand-red transition">Line Card & Catalogs</a></li>
+                    <li><a href="#" class="hover:text-brand-red transition">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">Contact Us</h4>
+                <address class="text-xs not-italic space-y-2 mb-4">
+                    <p><i class="fa-solid fa-location-dot mr-2 w-4 text-center"></i> 324 Haggard St #706, Plano, TX 75074</p>
+                    <p><i class="fa-solid fa-phone mr-2 w-4 text-center"></i> 1-(855) 335-7700</p>
+                    <p><i class="fa-solid fa-envelope mr-2 w-4 text-center"></i> support@rbtdistribution.com</p>
+                </address>
+                <div class="flex space-x-3 mt-4">
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-4 border-t border-gray-800 text-center text-xs">
+            &copy; 2026 RBT Distribution. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
