@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Products | RBT Distribution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .text-brand-red { color: #e1251b; }
+        .bg-brand-red { background-color: #e1251b; }
+        .hover-bg-brand-red:hover { background-color: #c81d14; }
+        /* Custom scrollbar for the filter sidebar */
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 flex flex-col min-h-screen">
+
+    <div class="bg-gray-900 text-gray-300 text-xs py-2 px-4 md:px-8 flex flex-col sm:flex-row justify-between items-center">
+        <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+            <span><i class="fa-solid fa-phone mr-1"></i> 1-(855) 335-7700</span>
+            <span><i class="fa-solid fa-envelope mr-1"></i> sales@rbtdistribution.com</span>
+        </div>
+        <div class="bg-yellow-400 text-gray-900 font-bold px-3 py-1 rounded-sm text-center">
+            Powering Dealers Across Automotive, Marine & Outdoor Markets
+        </div>
+        <div class="flex items-center space-x-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white transition">Need Help? <i class="fa-solid fa-chevron-down ml-1"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fa-solid fa-user mr-1"></i> Welcome, Dealer Access <i class="fa-solid fa-chevron-down ml-1"></i></a>
+        </div>
+    </div>
+
+    <header class="bg-white shadow-sm py-5 px-4 md:px-8 flex flex-wrap justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center w-full md:w-auto mb-4 md:mb-0 justify-center">
+            <a href="index.html" class="flex items-center flex-col hover:opacity-80 transition">
+                <img src="RBT T Red.png" alt="RBT Distribution Logo" class="h-16 mb-1 object-contain">
+                <span class="text-[10px] text-gray-500 tracking-wider font-bold">RELY ON INNOVATIVE SOLUTIONS</span>
+            </a>
+        </div>
+
+        <div class="flex-grow max-w-2xl mx-4 lg:mx-12">
+            <div class="flex w-full border-2 border-gray-200 rounded-md overflow-hidden focus-within:border-brand-red transition bg-white">
+                <select class="bg-gray-100 px-3 text-gray-700 font-medium border-r border-gray-200 hover:bg-gray-200 transition text-sm outline-none cursor-pointer appearance-none text-center">
+                    <option value="all">All Categories</option>
+                    <option disabled>──────────</option>
+                    <option value="sku">SKU / Part #</option>
+                    <option value="brand">Brand Name</option>
+                    <option disabled>──────────</option>
+                    <option value="auto">Automotive</option>
+                    <option value="powersports">Powersports</option>
+                    <option value="marine">Marine</option>
+                    <option value="security">Security</option>
+                </select>
+                
+                <input type="text" placeholder="What are you looking for?" class="w-full px-4 py-3 outline-none text-sm">
+                
+                <button class="bg-brand-red text-white px-6 hover-bg-brand-red transition">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+            <div class="text-xs text-brand-red mt-1 font-semibold cursor-pointer hover:underline">
+                <a href="products.html">View All Product Lists</a>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-6">
+            <a href="cart.html" class="relative flex flex-col items-center text-gray-700 hover:text-brand-red transition">
+                <i class="fa-solid fa-cart-shopping text-2xl mb-1"></i>
+                <span class="text-xs font-bold">CART</span>
+                <span class="absolute -top-2 -right-3 bg-brand-red text-white text-[10px] font-bold h-5 w-5 rounded-full flex items-center justify-center border-2 border-white">2</span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="bg-brand-red text-white shadow-md">
+        <ul class="flex flex-wrap justify-center space-x-1 md:space-x-8 text-sm font-semibold py-3 px-4">
+            <li><a href="index.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-house mr-2"></i>Home</a></li>
+            <li><a href="products.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center border-b-2 border-white"><i class="fa-solid fa-car mr-2"></i>Automotive</a></li>
+            <li><a href="motorcycle-atv.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-motorcycle mr-2"></i>Motorcycle & ATV</a></li>
+            <li><a href="marine.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-anchor mr-2"></i>Marine</a></li>
+            <li><a href="locks-security.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-lock mr-2"></i>Locks & Security</a></li>
+            <li><a href="promotions.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-tag mr-2"></i>Promotions</a></li>
+            <li><a href="linecard.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-file-lines mr-2"></i>Line Card</a></li>
+        </ul>
+    </nav>
+
+    <div class="bg-white border-b border-gray-200 py-4">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-sm text-gray-500 mb-2 md:mb-0">
+                <a href="index.html" class="hover:text-brand-red">Home</a> <i class="fa-solid fa-angle-right mx-2 text-xs"></i> 
+                <span class="text-gray-900 font-semibold">Automotive Parts & Accessories</span>
+            </div>
+            <div class="text-sm text-gray-500">Showing 1 - 12 of 1,245 Products</div>
+        </div>
+    </div>
+
+    <main class="flex-grow py-8">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8">
+            
+            <aside class="w-full md:w-1/4 flex-shrink-0">
+                <div class="bg-white border border-gray-200 rounded p-5 sticky top-28 shadow-sm">
+                    <div class="flex justify-between items-center mb-4 border-b border-gray-100 pb-2">
+                        <h2 class="font-black uppercase tracking-wider text-gray-900">Filters</h2>
+                        <button class="text-xs text-brand-red hover:underline">Clear All</button>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="font-bold text-sm text-gray-800 mb-3 flex justify-between cursor-pointer">Category <i class="fa-solid fa-minus text-gray-400"></i></h3>
+                        <ul class="text-sm space-y-2 text-gray-600 custom-scrollbar max-h-40 overflow-y-auto">
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Towing & Hitches (142)</label></li>
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Suspension (89)</label></li>
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Exhaust Systems (204)</label></li>
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Recovery Gear (67)</label></li>
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Electronics (115)</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="font-bold text-sm text-gray-800 mb-3 flex justify-between cursor-pointer">Brand <i class="fa-solid fa-minus text-gray-400"></i></h3>
+                        <div class="relative mb-2">
+                            <input type="text" placeholder="Search brands..." class="w-full text-xs p-2 border border-gray-200 rounded outline-none focus:border-brand-red">
+                            <i class="fa-solid fa-search absolute right-3 top-2.5 text-gray-400 text-xs"></i>
+                        </div>
+                        <ul class="text-sm space-y-2 text-gray-600 custom-scrollbar max-h-40 overflow-y-auto">
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Corsa Performance (88)</label></li>
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Edelbrock (105)</label></li>
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Eibach (42)</label></li>
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Redarc (30)</label></li>
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Rhino USA (55)</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-2">
+                        <h3 class="font-bold text-sm text-gray-800 mb-3 flex justify-between cursor-pointer">Availability <i class="fa-solid fa-minus text-gray-400"></i></h3>
+                        <ul class="text-sm space-y-2 text-gray-600">
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" checked class="mr-2 rounded text-brand-red focus:ring-brand-red"> In Stock Only</label></li>
+                            <li><label class="flex items-center cursor-pointer hover:text-brand-red"><input type="checkbox" class="mr-2 rounded text-brand-red focus:ring-brand-red"> Drop Ship Available</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="w-full md:w-3/4 flex flex-col">
+                
+                <div class="flex justify-between items-center bg-white p-3 border border-gray-200 rounded mb-6 shadow-sm">
+                    <div class="flex space-x-2">
+                        <button class="w-8 h-8 flex items-center justify-center bg-gray-100 text-brand-red rounded"><i class="fa-solid fa-table-cells-large"></i></button>
+                        <button class="w-8 h-8 flex items-center justify-center bg-transparent text-gray-400 hover:bg-gray-100 hover:text-gray-800 rounded transition"><i class="fa-solid fa-list"></i></button>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <span class="text-gray-500 mr-2">Sort By:</span>
+                        <select class="border border-gray-200 rounded p-1 outline-none focus:border-brand-red text-gray-800 bg-white cursor-pointer">
+                            <option>Best Selling</option>
+                            <option>Newest Arrivals</option>
+                            <option>Brand (A-Z)</option>
+                            <option>Price (Low to High)</option>
+                            <option>Price (High to Low)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    
+                    <div class="bg-white border border-gray-200 rounded hover:shadow-lg transition flex flex-col relative group">
+                        <div class="absolute top-2 right-2 bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded uppercase z-10">In Stock: 45</div>
+                        <a href="#" class="h-48 bg-white p-4 flex items-center justify-center border-b border-gray-100 overflow-hidden relative">
+                            <img src="https://via.placeholder.com/250x250/ffffff/1a1a1a?text=Winch" alt="Winch" class="object-contain w-full h-full group-hover:scale-105 transition duration-300">
+                        </a>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-1">Rhino USA</span>
+                            <a href="#" class="text-sm font-bold text-gray-800 hover:text-brand-red transition mb-2 line-clamp-2">SEC9.5 Truck/SUV/Jeep Winch 9,500 lb. Capacity</a>
+                            <div class="text-xs text-gray-500 mb-4 flex-grow">SKU: RHN-SEC9500</div>
+                            
+                            <div class="bg-gray-50 p-2 rounded border border-gray-100 mb-4">
+                                <div class="flex justify-between text-xs text-gray-500 mb-1"><span>MSRP:</span> <span class="line-through">$499.99</span></div>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-xs font-bold text-gray-700">Dealer Price:</span>
+                                    <span class="text-lg font-black text-brand-red">$374.99</span>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-2">
+                                <input type="number" value="1" min="1" class="w-16 border border-gray-200 rounded text-center text-sm outline-none focus:border-brand-red p-2">
+                                <button class="flex-grow bg-gray-900 hover:bg-brand-red text-white text-sm font-bold py-2 rounded transition flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-plus mr-2"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded hover:shadow-lg transition flex flex-col relative group">
+                        <div class="absolute top-2 right-2 bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded uppercase z-10">In Stock: 12</div>
+                        <a href="#" class="h-48 bg-white p-4 flex items-center justify-center border-b border-gray-100 overflow-hidden relative">
+                            <img src="https://via.placeholder.com/250x250/ffffff/1a1a1a?text=Tow+Pro" alt="Redarc" class="object-contain w-full h-full group-hover:scale-105 transition duration-300">
+                        </a>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-1">Redarc</span>
+                            <a href="#" class="text-sm font-bold text-gray-800 hover:text-brand-red transition mb-2 line-clamp-2">Tow-Pro Elite V3 Electric Brake Controller</a>
+                            <div class="text-xs text-gray-500 mb-4 flex-grow">SKU: RED-EBRH-ACCV3</div>
+                            
+                            <div class="bg-gray-50 p-2 rounded border border-gray-100 mb-4">
+                                <div class="flex justify-between text-xs text-gray-500 mb-1"><span>MSRP:</span> <span class="line-through">$214.00</span></div>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-xs font-bold text-gray-700">Dealer Price:</span>
+                                    <span class="text-lg font-black text-brand-red">$165.50</span>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-2">
+                                <input type="number" value="1" min="1" class="w-16 border border-gray-200 rounded text-center text-sm outline-none focus:border-brand-red p-2">
+                                <button class="flex-grow bg-gray-900 hover:bg-brand-red text-white text-sm font-bold py-2 rounded transition flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-plus mr-2"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded hover:shadow-lg transition flex flex-col relative group">
+                        <div class="absolute top-2 left-2 bg-brand-red text-white text-[10px] font-bold px-2 py-1 rounded uppercase z-10"><i class="fa-solid fa-fire mr-1"></i> Promo</div>
+                        <div class="absolute top-2 right-2 bg-yellow-100 text-yellow-700 text-[10px] font-bold px-2 py-1 rounded uppercase z-10">Low Stock: 3</div>
+                        <a href="#" class="h-48 bg-white p-4 flex items-center justify-center border-b border-gray-100 overflow-hidden relative">
+                            <img src="https://via.placeholder.com/250x250/ffffff/1a1a1a?text=Exhaust" alt="Exhaust" class="object-contain w-full h-full group-hover:scale-105 transition duration-300">
+                        </a>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-1">Corsa Performance</span>
+                            <a href="#" class="text-sm font-bold text-gray-800 hover:text-brand-red transition mb-2 line-clamp-2">Cat-Back Exhaust System - RAM 1500 TRX</a>
+                            <div class="text-xs text-gray-500 mb-4 flex-grow">SKU: COR-21045</div>
+                            
+                            <div class="bg-brand-red/10 p-2 rounded border border-brand-red/20 mb-4">
+                                <div class="flex justify-between text-xs text-gray-500 mb-1"><span>MSRP:</span> <span class="line-through">$1,899.00</span></div>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-xs font-bold text-brand-red">Promo Price:</span>
+                                    <span class="text-lg font-black text-brand-red">$1,350.00</span>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-2">
+                                <input type="number" value="1" min="1" class="w-16 border border-gray-200 rounded text-center text-sm outline-none focus:border-brand-red p-2">
+                                <button class="flex-grow bg-gray-900 hover:bg-brand-red text-white text-sm font-bold py-2 rounded transition flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-plus mr-2"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded hover:shadow-lg transition flex flex-col relative group">
+                        <div class="absolute top-2 right-2 bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-1 rounded uppercase z-10">Drop Ship</div>
+                        <a href="#" class="h-48 bg-white p-4 flex items-center justify-center border-b border-gray-100 overflow-hidden relative">
+                            <img src="https://via.placeholder.com/250x250/ffffff/1a1a1a?text=Hitch" alt="Hitch" class="object-contain w-full h-full group-hover:scale-105 transition duration-300">
+                        </a>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-1">Specialty Products</span>
+                            <a href="#" class="text-sm font-bold text-gray-800 hover:text-brand-red transition mb-2 line-clamp-2">MEGA-DUTY 10" Drop Hitch 2.5" Receiver</a>
+                            <div class="text-xs text-gray-500 mb-4 flex-grow">SKU: SPC-MD10-25</div>
+                            
+                            <div class="bg-gray-50 p-2 rounded border border-gray-100 mb-4">
+                                <div class="flex justify-between text-xs text-gray-500 mb-1"><span>MSRP:</span> <span class="line-through">$349.95</span></div>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-xs font-bold text-gray-700">Dealer Price:</span>
+                                    <span class="text-lg font-black text-brand-red">$275.00</span>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-2">
+                                <input type="number" value="1" min="1" class="w-16 border border-gray-200 rounded text-center text-sm outline-none focus:border-brand-red p-2">
+                                <button class="flex-grow bg-gray-900 hover:bg-brand-red text-white text-sm font-bold py-2 rounded transition flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-plus mr-2"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="bg-white border border-gray-200 rounded hover:shadow-lg transition flex flex-col relative group">
+                        <div class="absolute top-2 right-2 bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded uppercase z-10">In Stock: 100+</div>
+                        <a href="#" class="h-48 bg-white p-4 flex items-center justify-center border-b border-gray-100 overflow-hidden relative">
+                            <img src="https://via.placeholder.com/250x250/ffffff/1a1a1a?text=Snatch+Block" alt="Snatch Block" class="object-contain w-full h-full group-hover:scale-105 transition duration-300">
+                        </a>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-1">Rhino USA</span>
+                            <a href="#" class="text-sm font-bold text-gray-800 hover:text-brand-red transition mb-2 line-clamp-2">Heavy Duty Snatch Block - 27,000lb Break Strength</a>
+                            <div class="text-xs text-gray-500 mb-4 flex-grow">SKU: RHN-SB27K</div>
+                            
+                            <div class="bg-gray-50 p-2 rounded border border-gray-100 mb-4">
+                                <div class="flex justify-between text-xs text-gray-500 mb-1"><span>MSRP:</span> <span class="line-through">$54.90</span></div>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-xs font-bold text-gray-700">Dealer Price:</span>
+                                    <span class="text-lg font-black text-brand-red">$38.50</span>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-2">
+                                <input type="number" value="1" min="1" class="w-16 border border-gray-200 rounded text-center text-sm outline-none focus:border-brand-red p-2">
+                                <button class="flex-grow bg-gray-900 hover:bg-brand-red text-white text-sm font-bold py-2 rounded transition flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-plus mr-2"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded hover:shadow-lg transition flex flex-col relative group">
+                        <div class="absolute top-2 right-2 bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded uppercase z-10">In Stock: 8</div>
+                        <a href="#" class="h-48 bg-white p-4 flex items-center justify-center border-b border-gray-100 overflow-hidden relative">
+                            <img src="https://via.placeholder.com/250x250/ffffff/1a1a1a?text=Mirror+System" alt="Mirror System" class="object-contain w-full h-full group-hover:scale-105 transition duration-300">
+                        </a>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <span class="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-1">Brand Name</span>
+                            <a href="#" class="text-sm font-bold text-gray-800 hover:text-brand-red transition mb-2 line-clamp-2">FullVUE® Mirror Vision System for Jeep Wrangler</a>
+                            <div class="text-xs text-gray-500 mb-4 flex-grow">SKU: FV-JEEP-01</div>
+                            
+                            <div class="bg-gray-50 p-2 rounded border border-gray-100 mb-4">
+                                <div class="flex justify-between text-xs text-gray-500 mb-1"><span>MSRP:</span> <span class="line-through">$399.00</span></div>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-xs font-bold text-gray-700">Dealer Price:</span>
+                                    <span class="text-lg font-black text-brand-red">$295.00</span>
+                                </div>
+                            </div>
+
+                            <div class="flex space-x-2">
+                                <input type="number" value="1" min="1" class="w-16 border border-gray-200 rounded text-center text-sm outline-none focus:border-brand-red p-2">
+                                <button class="flex-grow bg-gray-900 hover:bg-brand-red text-white text-sm font-bold py-2 rounded transition flex items-center justify-center">
+                                    <i class="fa-solid fa-cart-plus mr-2"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-center mt-auto border-t border-gray-200 pt-6">
+                    <nav class="flex space-x-1">
+                        <a href="#" class="px-3 py-2 border border-gray-200 bg-white text-gray-500 hover:bg-gray-50 rounded text-sm"><i class="fa-solid fa-angle-left"></i></a>
+                        <a href="#" class="px-3 py-2 border border-brand-red bg-brand-red text-white font-bold rounded text-sm">1</a>
+                        <a href="#" class="px-3 py-2 border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 hover:text-brand-red rounded text-sm font-bold">2</a>
+                        <a href="#" class="px-3 py-2 border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 hover:text-brand-red rounded text-sm font-bold">3</a>
+                        <span class="px-3 py-2 text-gray-500">...</span>
+                        <a href="#" class="px-3 py-2 border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 hover:text-brand-red rounded text-sm font-bold">104</a>
+                        <a href="#" class="px-3 py-2 border border-gray-200 bg-white text-gray-500 hover:bg-gray-50 rounded text-sm"><i class="fa-solid fa-angle-right"></i></a>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#1a1a1a] text-gray-400 pt-12 pb-6 border-t-4 border-brand-red mt-auto">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="border border-gray-700 bg-gray-800 rounded p-4 flex flex-col items-center text-center">
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">Sales Representative</h4>
+                <div class="w-24 h-24 rounded-full bg-gray-600 mb-3 overflow-hidden border-2 border-brand-red">
+                    <img src="https://via.placeholder.com/100" alt="Joshua Alegranti" class="w-full h-full object-cover">
+                </div>
+                <h5 class="text-white font-bold text-lg">Joshua Alegranti</h5>
+                <p class="text-xs text-brand-red mb-2">Outside Sales</p>
+                <a href="mailto:josh@rbtdistribution.com" class="text-xs hover:text-white transition block mb-1">josh@rbtdistribution.com</a>
+                <a href="tel:2144005707" class="text-xs hover:text-white transition block">214-400-5707</a>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">RBT Distribution</h4>
+                <p class="text-xs leading-relaxed">
+                    RBT Distribution is a one-stop shop for aftermarket automotive parts and accessories, and industrial markets. We are a two-step distributor of parts and accessories serving vehicles of markets (automotive, powersports, marine, RV, sport and outdoor etc).
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">Useful Links</h4>
+                <ul class="text-xs space-y-2">
+                    <li><a href="#" class="hover:text-brand-red transition">Company Info</a></li>
+                    <li><a href="linecard.html" class="hover:text-brand-red transition">Line Card & Catalogs</a></li>
+                    <li><a href="#" class="hover:text-brand-red transition">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">Contact Us</h4>
+                <address class="text-xs not-italic space-y-2 mb-4">
+                    <p><i class="fa-solid fa-location-dot mr-2 w-4 text-center"></i> 324 Haggard St #706, Plano, TX 75074</p>
+                    <p><i class="fa-solid fa-phone mr-2 w-4 text-center"></i> 1-(855) 335-7700</p>
+                    <p><i class="fa-solid fa-envelope mr-2 w-4 text-center"></i> support@rbtdistribution.com</p>
+                </address>
+                <div class="flex space-x-3 mt-4">
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-4 border-t border-gray-800 text-center text-xs">
+            &copy; 2026 RBT Distribution. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

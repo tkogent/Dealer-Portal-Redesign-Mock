@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBT Distribution | Dealer Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .text-brand-red { color: #e1251b; }
+        .bg-brand-red { background-color: #e1251b; }
+        .hover-bg-brand-red:hover { background-color: #c81d14; }
+        .clip-path-slant { clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); }
+        @media (max-width: 768px) { .clip-path-slant { clip-path: none; } }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <div class="bg-gray-900 text-gray-300 text-xs py-2 px-4 md:px-8 flex flex-col sm:flex-row justify-between items-center">
+        <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+            <span><i class="fa-solid fa-phone mr-1"></i> 1-(855) 335-7700</span>
+            <span><i class="fa-solid fa-envelope mr-1"></i> sales@rbtdistribution.com</span>
+        </div>
+        <div class="bg-yellow-400 text-gray-900 font-bold px-3 py-1 rounded-sm text-center">
+            Powering Dealers Across Automotive, Marine & Outdoor Markets
+        </div>
+        <div class="flex items-center space-x-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white transition">Need Help? <i class="fa-solid fa-chevron-down ml-1"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fa-solid fa-user mr-1"></i> Welcome, Dealer Access <i class="fa-solid fa-chevron-down ml-1"></i></a>
+        </div>
+    </div>
+
+    <header class="bg-white shadow-sm py-5 px-4 md:px-8 flex flex-wrap justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center w-full md:w-auto mb-4 md:mb-0 justify-center">
+            <a href="index.html" class="flex items-center flex-col hover:opacity-80 transition">
+                <img src="RBT T Red.png" alt="RBT Distribution Logo" class="h-16 mb-1 object-contain">
+                <span class="text-[10px] text-gray-500 tracking-wider font-bold">RELY ON INNOVATIVE SOLUTIONS</span>
+            </a>
+        </div>
+
+        <div class="flex-grow max-w-2xl mx-4 lg:mx-12">
+            <div class="flex w-full border-2 border-gray-200 rounded-md overflow-hidden focus-within:border-brand-red transition bg-white">
+                <select class="bg-gray-100 px-3 text-gray-700 font-medium border-r border-gray-200 hover:bg-gray-200 transition text-sm outline-none cursor-pointer appearance-none text-center">
+                    <option value="all">All Categories</option>
+                    <option disabled>──────────</option>
+                    <option value="sku">SKU / Part #</option>
+                    <option value="brand">Brand Name</option>
+                    <option disabled>──────────</option>
+                    <option value="auto">Automotive</option>
+                    <option value="powersports">Powersports</option>
+                    <option value="marine">Marine</option>
+                    <option value="security">Security</option>
+                </select>
+                
+                <input type="text" placeholder="What are you looking for?" class="w-full px-4 py-3 outline-none text-sm">
+                
+                <button class="bg-brand-red text-white px-6 hover-bg-brand-red transition">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+            <div class="text-xs text-brand-red mt-1 font-semibold cursor-pointer hover:underline">
+                <a href="products.html">View All Product Lists</a>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-6">
+            <a href="cart.html" class="relative flex flex-col items-center text-gray-700 hover:text-brand-red transition">
+                <i class="fa-solid fa-cart-shopping text-2xl mb-1"></i>
+                <span class="text-xs font-bold">CART</span>
+                <span class="absolute -top-2 -right-3 bg-brand-red text-white text-[10px] font-bold h-5 w-5 rounded-full flex items-center justify-center border-2 border-white">2</span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="bg-brand-red text-white shadow-md">
+        <ul class="flex flex-wrap justify-center space-x-1 md:space-x-8 text-sm font-semibold py-3 px-4">
+            <li><a href="index.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center border-b-2 border-white"><i class="fa-solid fa-house mr-2"></i>Home</a></li>
+            <li><a href="products.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-car mr-2"></i>Automotive</a></li>
+            <li><a href="motorcycle-atv.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-motorcycle mr-2"></i>Motorcycle & ATV</a></li>
+            <li><a href="marine.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-anchor mr-2"></i>Marine</a></li>
+            <li><a href="locks-security.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-lock mr-2"></i>Locks & Security</a></li>
+            <li><a href="promotions.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-tag mr-2"></i>Promotions</a></li>
+            <li><a href="linecard.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-file-lines mr-2"></i>Line Card</a></li>
+        </ul>
+    </nav>
+
+    <section class="relative bg-gray-900 overflow-hidden">
+        <img src="RedA.png" alt="Redarc Offroad Truck" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent z-0"></div>
+        <div class="relative max-w-7xl mx-auto px-8 py-24 md:py-32 flex flex-col md:flex-row items-center z-10">
+            <div class="md:w-1/2 text-white">
+                <span class="text-brand-red font-bold tracking-widest uppercase text-sm mb-2 block">Featured Brand</span>
+                <h2 class="text-4xl md:text-6xl font-black mb-4 leading-tight text-white uppercase italic">The Power of <br><span class="text-brand-red">Redarc</span></h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-lg shadow-sm">Advanced trailer brakes and power management systems for the ultimate off-grid and towing experience.</p>
+                <div class="flex space-x-4">
+                    <a href="products.html" class="bg-brand-red hover-bg-brand-red text-white font-bold py-3 px-8 rounded shadow-lg transition transform hover:-translate-y-1">Shop Redarc</a>
+                    <a href="linecard.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 rounded shadow-lg transition transform hover:-translate-y-1">View Catalogs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-t border-gray-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-gray-800 mb-10 tracking-wide">LATEST BRAND ADDITIONS</h3>
+            <div class="relative flex w-full overflow-hidden marquee-container grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-500 pb-4">
+                
+                <!-- Block 1 -->
+                <div class="flex shrink-0 animate-marquee items-center gap-12 md:gap-24 pr-12 md:pr-24">
+                    <!-- Set 1 -->
+                    <div class="text-2xl font-black italic tracking-tighter text-red-600 min-w-[120px]">Edelbrock</div>
+                    <div class="text-2xl font-black uppercase tracking-widest text-gray-800 min-w-[120px]">HIPLOK</div>
+                    <div class="text-2xl font-black italic text-red-600 min-w-[120px]">Eibach</div>
+                    <div class="text-xl font-bold text-red-700 min-w-[120px] text-left leading-tight"><i class="fa-solid fa-gear mr-2"></i>Specialty<br>Products</div>
+                    <div class="text-2xl font-black italic lowercase tracking-wider text-gray-800 min-w-[120px]">küat</div>
+                    
+                    <!-- Set 2 -->
+                    <div class="text-2xl font-black italic tracking-tighter text-red-600 min-w-[120px]">Edelbrock</div>
+                    <div class="text-2xl font-black uppercase tracking-widest text-gray-800 min-w-[120px]">HIPLOK</div>
+                    <div class="text-2xl font-black italic text-red-600 min-w-[120px]">Eibach</div>
+                    <div class="text-xl font-bold text-red-700 min-w-[120px] text-left leading-tight"><i class="fa-solid fa-gear mr-2"></i>Specialty<br>Products</div>
+                    <div class="text-2xl font-black italic lowercase tracking-wider text-gray-800 min-w-[120px]">küat</div>
+
+                    <!-- Set 3 -->
+                    <div class="text-2xl font-black italic tracking-tighter text-red-600 min-w-[120px]">Edelbrock</div>
+                    <div class="text-2xl font-black uppercase tracking-widest text-gray-800 min-w-[120px]">HIPLOK</div>
+                    <div class="text-2xl font-black italic text-red-600 min-w-[120px]">Eibach</div>
+                    <div class="text-xl font-bold text-red-700 min-w-[120px] text-left leading-tight"><i class="fa-solid fa-gear mr-2"></i>Specialty<br>Products</div>
+                    <div class="text-2xl font-black italic lowercase tracking-wider text-gray-800 min-w-[120px]">küat</div>
+
+                    <!-- Set 4 -->
+                    <div class="text-2xl font-black italic tracking-tighter text-red-600 min-w-[120px]">Edelbrock</div>
+                    <div class="text-2xl font-black uppercase tracking-widest text-gray-800 min-w-[120px]">HIPLOK</div>
+                    <div class="text-2xl font-black italic text-red-600 min-w-[120px]">Eibach</div>
+                    <div class="text-xl font-bold text-red-700 min-w-[120px] text-left leading-tight"><i class="fa-solid fa-gear mr-2"></i>Specialty<br>Products</div>
+                    <div class="text-2xl font-black italic lowercase tracking-wider text-gray-800 min-w-[120px]">küat</div>
+                </div>
+
+                <!-- Block 2 -->
+                <div class="flex shrink-0 animate-marquee items-center gap-12 md:gap-24 pr-12 md:pr-24">
+                    <!-- Set 1 -->
+                    <div class="text-2xl font-black italic tracking-tighter text-red-600 min-w-[120px]">Edelbrock</div>
+                    <div class="text-2xl font-black uppercase tracking-widest text-gray-800 min-w-[120px]">HIPLOK</div>
+                    <div class="text-2xl font-black italic text-red-600 min-w-[120px]">Eibach</div>
+                    <div class="text-xl font-bold text-red-700 min-w-[120px] text-left leading-tight"><i class="fa-solid fa-gear mr-2"></i>Specialty<br>Products</div>
+                    <div class="text-2xl font-black italic lowercase tracking-wider text-gray-800 min-w-[120px]">küat</div>
+                    
+                    <!-- Set 2 -->
+                    <div class="text-2xl font-black italic tracking-tighter text-red-600 min-w-[120px]">Edelbrock</div>
+                    <div class="text-2xl font-black uppercase tracking-widest text-gray-800 min-w-[120px]">HIPLOK</div>
+                    <div class="text-2xl font-black italic text-red-600 min-w-[120px]">Eibach</div>
+                    <div class="text-xl font-bold text-red-700 min-w-[120px] text-left leading-tight"><i class="fa-solid fa-gear mr-2"></i>Specialty<br>Products</div>
+                    <div class="text-2xl font-black italic lowercase tracking-wider text-gray-800 min-w-[120px]">küat</div>
+
+                    <!-- Set 3 -->
+                    <div class="text-2xl font-black italic tracking-tighter text-red-600 min-w-[120px]">Edelbrock</div>
+                    <div class="text-2xl font-black uppercase tracking-widest text-gray-800 min-w-[120px]">HIPLOK</div>
+                    <div class="text-2xl font-black italic text-red-600 min-w-[120px]">Eibach</div>
+                    <div class="text-xl font-bold text-red-700 min-w-[120px] text-left leading-tight"><i class="fa-solid fa-gear mr-2"></i>Specialty<br>Products</div>
+                    <div class="text-2xl font-black italic lowercase tracking-wider text-gray-800 min-w-[120px]">küat</div>
+
+                    <!-- Set 4 -->
+                    <div class="text-2xl font-black italic tracking-tighter text-red-600 min-w-[120px]">Edelbrock</div>
+                    <div class="text-2xl font-black uppercase tracking-widest text-gray-800 min-w-[120px]">HIPLOK</div>
+                    <div class="text-2xl font-black italic text-red-600 min-w-[120px]">Eibach</div>
+                    <div class="text-xl font-bold text-red-700 min-w-[120px] text-left leading-tight"><i class="fa-solid fa-gear mr-2"></i>Specialty<br>Products</div>
+                    <div class="text-2xl font-black italic lowercase tracking-wider text-gray-800 min-w-[120px]">küat</div>
+                </div>
+                
+        </div>
+    </section>
+
+    <section class="py-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[500px]">
+                <a href="products.html" class="md:col-span-6 relative group overflow-hidden rounded shadow-sm block h-64 md:h-full">
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105 z-0"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition z-10"></div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-4 z-20">
+                        <h3 class="text-3xl font-black uppercase tracking-widest text-shadow">Automotive</h3>
+                    </div>
+                </a>
+                <div class="md:col-span-3 flex flex-col gap-4 h-full">
+                    <a href="motorcycle-atv.html" class="relative group overflow-hidden rounded shadow-sm block h-48 md:h-1/2">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105 z-0"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition z-10"></div>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-20">
+                            <h3 class="text-xl font-bold uppercase tracking-wider text-shadow">Motorcycle</h3>
+                        </div>
+                    </a>
+                    <a href="locks-security.html" class="relative group overflow-hidden rounded shadow-sm block h-48 md:h-1/2">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105 z-0"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition z-10"></div>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-20">
+                            <h3 class="text-xl font-bold uppercase tracking-wider text-shadow text-center">Tools & <br>Security</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="md:col-span-3 flex flex-col gap-4 h-full">
+                    <a href="motorcycle-atv.html" class="relative group overflow-hidden rounded shadow-sm block h-48 md:h-1/2">
+                        <img src="powersports.jpg" alt="Powersports" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 z-0">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition z-10"></div>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-20">
+                            <h3 class="text-xl font-bold uppercase tracking-wider text-shadow">Powersports</h3>
+                        </div>
+                    </a>
+                    <a href="marine.html" class="relative group overflow-hidden rounded shadow-sm block h-48 md:h-1/2">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105 z-0"></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition z-10"></div>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-20">
+                            <h3 class="text-xl font-bold uppercase tracking-wider text-shadow text-center">Marine & <br>Outdoors</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-brand-red text-white flex flex-col md:flex-row items-center overflow-hidden rounded shadow-lg p-6 md:p-10 relative">
+                <img src="RBT T Red.png" alt="" class="absolute left-[-50px] top-[-50px] h-[250px] opacity-10 brightness-0 invert z-0">
+                
+                <div class="flex-grow text-center md:text-left z-10">
+                    <h2 class="text-3xl md:text-5xl font-black uppercase italic tracking-tight mb-1">Stock up on the best</h2>
+                    <p class="text-lg md:text-xl font-medium tracking-wide">NEW BRANDS, FRESH INVENTORY, UNBEATABLE DEALS.</p>
+                </div>
+                <div class="mt-6 md:mt-0 md:ml-8 flex-shrink-0 z-10">
+                    <a href="promotions.html" class="inline-block bg-white text-brand-red font-bold py-3 px-8 rounded shadow hover:bg-gray-100 transition transform hover:-translate-y-1 uppercase tracking-wider">View Deals</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-2">
+            <a href="products.html" class="group relative h-64 overflow-hidden block">
+                <img src="corsa.webp" alt="Corsa" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-105 z-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 z-10"></div>
+                <div class="absolute inset-0 flex items-center justify-center z-20">
+                    <h3 class="text-3xl text-white font-black italic tracking-tighter">CORSA<br><span class="text-lg text-gray-300 tracking-widest font-sans not-italic">PERFORMANCE</span></h3>
+                </div>
+            </a>
+            <a href="products.html" class="group relative h-64 overflow-hidden block">
+                <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=600&q=80" alt="GearWrench" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-105 z-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 z-10"></div>
+                <div class="absolute inset-0 flex items-center justify-center text-center z-20">
+                    <h3 class="text-3xl text-white font-black tracking-tight"><span class="text-yellow-500">GEAR</span>WRENCH</h3>
+                </div>
+            </a>
+            <a href="locks-security.html" class="group relative h-64 overflow-hidden block">
+                <img src="kryptonite.webp" alt="Kryptonite" class="absolute inset-0 w-full h-full object-cover transition duration-500 group-hover:scale-105 z-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 z-10"></div>
+                <div class="absolute inset-0 flex items-center justify-center text-center z-20">
+                    <h3 class="text-3xl text-white font-black italic tracking-tighter">KRYPTONITE<br><span class="text-xs text-gray-300 tracking-widest font-sans not-italic uppercase">Steering & Suspension</span></h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-brand-red mb-8">Automotive</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                
+                <div class="border border-gray-100 p-4 hover:shadow-xl transition flex flex-col items-center relative group bg-white">
+                    <img src="https://via.placeholder.com/200" alt="Pressure Switch" class="h-40 object-contain mb-4 group-hover:scale-105 transition">
+                    <h4 class="text-sm text-gray-700 font-medium mb-2">Pressure Switch - for Air Tanks with 105 to 135 PSI</h4>
+                </div>
+
+                <div class="border border-gray-100 p-4 hover:shadow-xl transition flex flex-col items-center relative group bg-white">
+                    <img src="https://via.placeholder.com/200" alt="GoosePuck" class="h-40 object-contain mb-4 group-hover:scale-105 transition">
+                    <h4 class="text-sm text-gray-700 font-medium mb-2">GoosePuck Offset Ball</h4>
+                </div>
+
+                <div class="border border-gray-100 p-4 hover:shadow-xl transition flex flex-col items-center relative group bg-white">
+                    <img src="https://via.placeholder.com/200" alt="MEGA-DUTY Hitch" class="h-40 object-contain mb-4 group-hover:scale-105 transition">
+                    <h4 class="text-sm text-gray-700 font-medium mb-2">MEGA-DUTY Drop Hitch</h4>
+                </div>
+
+                <div class="border border-gray-100 p-4 hover:shadow-xl transition flex flex-col items-center relative group bg-white">
+                    <img src="https://via.placeholder.com/200" alt="Mirror Vision System" class="h-40 object-contain mb-4 group-hover:scale-105 transition">
+                    <h4 class="text-sm text-gray-700 font-medium mb-2">FullVUE® Mirror Vision System</h4>
+                </div>
+
+            </div>
+            
+            <div class="mt-8">
+                <a href="products.html" class="inline-block bg-red-400 hover:bg-brand-red text-white text-sm font-bold py-3 px-8 transition rounded-sm">
+                    Browse all Products <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-black text-gray-900 uppercase tracking-wider mb-2">Latest News</h2>
+                <p class="text-sm text-gray-500 max-w-3xl mx-auto">A great team does not just think out of the box at RBT... Our passion for product innovation is changing the industry and simultaneously generating profits for our network.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                
+                <div class="bg-white border border-gray-200 rounded-sm shadow-sm overflow-hidden flex flex-col group hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="absolute top-2 left-2 bg-brand-red text-white text-xs font-bold px-2 py-1 z-10">NEW PRODUCT</div>
+                        <img src="gen.webp" alt="Gen-Y Hitches" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-gray-900 mb-2 uppercase tracking-wide">Now in stock: Gen-Y!</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">We are excited to announce that we are now fully stocked with Gen-Y Hitches. Built tough and engineered for the heaviest loads, get your stocking orders in today.</p>
+                        <div class="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                            <div class="text-xs text-gray-500"><i class="fa-regular fa-calendar mr-1"></i> March 24, 2026</div>
+                            <a href="#" class="text-brand-red font-bold text-sm hover:underline">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-sm shadow-sm overflow-hidden flex flex-col group hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="absolute top-2 left-2 bg-blue-600 text-white text-xs font-bold px-2 py-1 z-10">COMPANY NEWS</div>
+                        <img src="https://via.placeholder.com/400x250/00bcd4/ffffff?text=Dealer+Portal" alt="Dealer Portal Update" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-gray-900 mb-2 uppercase tracking-wide">Upgraded Dealer Portal</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">Welcome to the newly redesigned RBT Distribution Dealer Portal. Enjoy faster ordering, live inventory updates, and easier access to our full line card.</p>
+                        <div class="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                            <div class="text-xs text-gray-500"><i class="fa-regular fa-calendar mr-1"></i> March 15, 2026</div>
+                            <a href="#" class="text-brand-red font-bold text-sm hover:underline">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-sm shadow-sm overflow-hidden flex flex-col group hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-100 relative flex items-center justify-center overflow-hidden">
+                        <div class="absolute top-2 left-2 bg-green-600 text-white text-xs font-bold px-2 py-1 z-10">EVENTS</div>
+                        <img src="https://via.placeholder.com/400x250/4CAF50/ffffff?text=Trade+Show" alt="Trade Show" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-gray-900 mb-2 uppercase tracking-wide">Come see us at SEMA!</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-grow">The RBT team will be walking the floor at SEMA this year looking for the best new brands. Reach out to your rep to schedule a meeting with us in Vegas.</p>
+                        <div class="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                            <div class="text-xs text-gray-500"><i class="fa-regular fa-calendar mr-1"></i> March 02, 2026</div>
+                            <a href="#" class="text-brand-red font-bold text-sm hover:underline">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1610647752706-3bb12232b3ab?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-8 md:mb-0 md:w-2/3 text-center md:text-left">
+                <h2 class="text-3xl md:text-5xl font-black uppercase tracking-wider mb-4"><span class="text-brand-red">Comprehensive</span> Line Card</h2>
+                <p class="text-gray-300 text-lg md:text-xl max-w-2xl">Explore our massive portfolio of industry-leading brands across Automotive, Marine, Dirt Bike, ATV/UTV, and Security categories.</p>
+            </div>
+            <div class="flex-shrink-0">
+                <a href="linecard.html" class="inline-flex items-center justify-center bg-brand-red hover-bg-brand-red text-white font-bold py-4 px-8 rounded shadow-xl transition transform hover:-translate-y-1 uppercase tracking-wider text-lg">
+                    View Interactive Line Card <i class="fa-solid fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1a1a1a] text-gray-400 pt-12 pb-6 border-t-4 border-brand-red">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="border border-gray-700 bg-gray-800 rounded p-4 flex flex-col items-center text-center">
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">Sales Representative</h4>
+                <div class="w-24 h-24 rounded-full bg-gray-600 mb-3 overflow-hidden border-2 border-brand-red">
+                    <img src="https://via.placeholder.com/100" alt="Joshua Alegranti" class="w-full h-full object-cover">
+                </div>
+                <h5 class="text-white font-bold text-lg">Joshua Alegranti</h5>
+                <p class="text-xs text-brand-red mb-2">Outside Sales</p>
+                <a href="mailto:josh@rbtdistribution.com" class="text-xs hover:text-white transition block mb-1">josh@rbtdistribution.com</a>
+                <a href="tel:2144005707" class="text-xs hover:text-white transition block">214-400-5707</a>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">RBT Distribution</h4>
+                <p class="text-xs leading-relaxed">
+                    RBT Distribution is a one-stop shop for aftermarket automotive parts and accessories, and industrial markets. We are a two-step distributor of parts and accessories serving vehicles of markets (automotive, powersports, marine, RV, sport and outdoor etc).
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">Useful Links</h4>
+                <ul class="text-xs space-y-2">
+                    <li><a href="#" class="hover:text-brand-red transition">Company Info</a></li>
+                    <li><a href="linecard.html" class="hover:text-brand-red transition">Line Card & Catalogs</a></li>
+                    <li><a href="#" class="hover:text-brand-red transition">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-sm font-bold mb-4 uppercase tracking-wider">Contact Us</h4>
+                <address class="text-xs not-italic space-y-2 mb-4">
+                    <p><i class="fa-solid fa-location-dot mr-2 w-4 text-center"></i> 324 Haggard St #706, Plano, TX 75074</p>
+                    <p><i class="fa-solid fa-phone mr-2 w-4 text-center"></i> 1-(855) 335-7700</p>
+                    <p><i class="fa-solid fa-envelope mr-2 w-4 text-center"></i> support@rbtdistribution.com</p>
+                </address>
+                <div class="flex space-x-3 mt-4">
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-4 border-t border-gray-800 text-center text-xs">
+            &copy; 2026 RBT Distribution. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
