@@ -10,21 +10,23 @@
         .text-brand-red { color: #e1251b; }
         .bg-brand-red { background-color: #e1251b; }
         .hover-bg-brand-red:hover { background-color: #c81d14; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="bg-gray-50 font-sans text-gray-800 flex flex-col min-h-screen">
 
     <div class="bg-gray-900 text-gray-300 text-xs py-2 px-4 md:px-8 flex flex-col sm:flex-row justify-between items-center">
-        <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-2 sm:mb-0">
             <span><i class="fa-solid fa-phone mr-1"></i> 1-(855) 335-7700</span>
             <span><i class="fa-solid fa-envelope mr-1"></i> sales@rbtdistribution.com</span>
         </div>
-        <div class="bg-yellow-400 text-gray-900 font-bold px-3 py-1 rounded-sm text-center">
+        <div class="bg-yellow-400 text-gray-900 font-bold px-3 py-1 rounded-sm text-center mb-2 sm:mb-0 text-[10px] sm:text-xs w-full sm:w-auto">
             Powering Dealers Across Automotive, Marine & Outdoor Markets
         </div>
-        <div class="flex items-center space-x-4 mt-2 sm:mt-0">
-            <a href="#" class="hover:text-white transition">Need Help? <i class="fa-solid fa-chevron-down ml-1"></i></a>
-            <a href="#" class="hover:text-white transition"><i class="fa-solid fa-user mr-1"></i> Welcome, Dealer Access <i class="fa-solid fa-chevron-down ml-1"></i></a>
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mt-2 sm:mt-0">
+            <a href="#" class="hover:text-white transition whitespace-nowrap">Need Help? <i class="fa-solid fa-chevron-down ml-1"></i></a>
+            <a href="#" class="hover:text-white transition whitespace-nowrap"><i class="fa-solid fa-user mr-1"></i> Welcome, Dealer Access <i class="fa-solid fa-chevron-down ml-1"></i></a>
         </div>
     </div>
 
@@ -49,7 +51,7 @@
 
             <div class="flex-grow md:flex-grow-0 max-w-2xl w-full md:mx-4 lg:mx-12">
                 <div class="flex w-full border-2 border-gray-200 rounded-md overflow-hidden focus-within:border-brand-red transition bg-white">
-                    <select class="bg-gray-100 px-3 text-gray-700 font-medium border-r border-gray-200 hover:bg-gray-200 transition text-sm outline-none cursor-pointer appearance-none text-center">
+                    <select class="hidden sm:block bg-gray-100 px-3 text-gray-700 font-medium border-r border-gray-200 hover:bg-gray-200 transition text-sm outline-none cursor-pointer appearance-none text-center">
                         <option value="all">All Categories</option>
                         <option disabled>──────────</option>
                         <option value="sku">SKU / Part #</option>
@@ -83,7 +85,7 @@
     </header>
 
     <nav class="bg-brand-red text-white shadow-md">
-        <ul class="flex flex-wrap justify-center space-x-1 md:space-x-8 text-sm font-semibold py-3 px-4">
+        <ul class="flex overflow-x-auto no-scrollbar md:flex-wrap justify-start md:justify-center space-x-4 md:space-x-8 text-sm font-semibold py-3 px-4">
             <li><a href="index.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-house mr-2"></i>Home</a></li>
             <li><a href="products.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-car mr-2"></i>Automotive</a></li>
             <li><a href="motorcycle-atv.html" class="hover:text-gray-200 transition px-2 py-1 flex items-center"><i class="fa-solid fa-motorcycle mr-2"></i>Motorcycle & ATV</a></li>
